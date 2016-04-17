@@ -26,14 +26,10 @@
         <entry file="file://$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/Interval.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+              <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1284#1296#0" expanded="true" />
-                <element signature="e#1685#1686#0" expanded="true" />
-                <element signature="e#1716#1717#0" expanded="true" />
-                <element signature="e#1755#1756#0" expanded="true" />
-                <element signature="e#1782#1783#0" expanded="true" />
+                <element signature="e#1236#1248#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -43,11 +39,11 @@
         <entry file="file://$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/PrimeFinder.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="56" column="53" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1748#1749#0" expanded="true" />
-                <element signature="e#1786#1787#0" expanded="true" />
+                <element signature="e#1340#1341#0" expanded="true" />
+                <element signature="e#1378#1379#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -57,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/sandbox/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.2921875">
-              <caret line="16" column="84" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
+              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/lib/LibSettings.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -96,11 +92,11 @@
         <entry file="file://$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/WorkerPrimeFinder.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#478#479#0" expanded="true" />
-                <element signature="e#512#513#0" expanded="true" />
+                <element signature="e#468#469#0" expanded="true" />
+                <element signature="e#502#503#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -134,13 +130,13 @@
         <option value="$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/IWorkerManager.java" />
         <option value="$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/util/Timer.java" />
         <option value="$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/gui/PrimeFinderGui.form" />
-        <option value="$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/Interval.java" />
-        <option value="$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/PrimeFinder.java" />
-        <option value="$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/sandbox/Main.java" />
         <option value="$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/Worker.java" />
-        <option value="$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/WorkerPrimeFinder.java" />
         <option value="$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/lib/LibConsts.java" />
+        <option value="$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/PrimeFinder.java" />
         <option value="$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/lib/LibSettings.java" />
+        <option value="$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/Interval.java" />
+        <option value="$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/WorkerPrimeFinder.java" />
+        <option value="$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/sandbox/Main.java" />
       </list>
     </option>
   </component>
@@ -274,6 +270,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Threads-are-fun-away-from-you" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Threads-are-fun-away-from-you" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="viniciuslambardozzi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="threadsarefunawayfromyou" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -599,7 +625,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="32" width="1936" height="1056" extended-state="6" />
+    <frame x="1358" y="32" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -654,11 +680,7 @@
           <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1284#1296#0" expanded="true" />
-            <element signature="e#1685#1686#0" expanded="true" />
-            <element signature="e#1716#1717#0" expanded="true" />
-            <element signature="e#1755#1756#0" expanded="true" />
-            <element signature="e#1782#1783#0" expanded="true" />
+            <element signature="e#1236#1248#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -669,8 +691,8 @@
           <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1748#1749#0" expanded="true" />
-            <element signature="e#1786#1787#0" expanded="true" />
+            <element signature="e#1340#1341#0" expanded="true" />
+            <element signature="e#1378#1379#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -691,8 +713,8 @@
           <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -702,6 +724,17 @@
         <state vertical-scroll-proportion="0.5380435">
           <caret line="1257" column="66" selection-start-line="1257" selection-start-column="61" selection-end-line="1257" selection-end-column="66" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/Interval.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1236#1248#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -720,29 +753,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/Interval.java">
+    <entry file="file://$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/lib/LibSettings.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1284#1296#0" expanded="true" />
-            <element signature="e#1685#1686#0" expanded="true" />
-            <element signature="e#1716#1717#0" expanded="true" />
-            <element signature="e#1755#1756#0" expanded="true" />
-            <element signature="e#1782#1783#0" expanded="true" />
-          </folding>
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/PrimeFinder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="53" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1748#1749#0" expanded="true" />
-            <element signature="e#1786#1787#0" expanded="true" />
+            <element signature="e#1340#1341#0" expanded="true" />
+            <element signature="e#1378#1379#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -750,27 +776,19 @@
     <entry file="file://$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/WorkerPrimeFinder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/lib/LibSettings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/sandbox/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2921875">
-          <caret line="16" column="84" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
+          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -12,7 +12,7 @@ public class WorkerPrimeFinder  implements Runnable
 
     public WorkerPrimeFinder(LinkedList<BigInteger> values)
     {
-        primesFound = new LinkedList<BigInteger>();
+        primesFound = new LinkedList<>();
 
         this.values = values;
     }

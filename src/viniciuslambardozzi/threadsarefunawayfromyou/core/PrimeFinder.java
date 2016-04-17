@@ -1,6 +1,5 @@
 package viniciuslambardozzi.threadsarefunawayfromyou.core;
 
-import sun.awt.image.ImageWatched;
 import viniciuslambardozzi.threadsarefunawayfromyou.core.lib.LibSettings;
 
 import java.math.BigInteger;
@@ -16,14 +15,6 @@ public class PrimeFinder
 
     public PrimeFinder()
     {
-        /*
-        Worker time:7230
-        Worker time:15779
-        Worker time:21305
-        Worker time:25606
-
-        Worker time:50437
-        */
         workerList = new ArrayList<>();
         threadList = new ArrayList<>();
         primesFound = new LinkedList<>();
@@ -46,15 +37,11 @@ public class PrimeFinder
     {
         joinWorkers();
 
-        long totalTime = 0;
-
         for(WorkerPrimeFinder worker : workerList)
         {
             primesFound.addAll(worker.getPrimesFound());
-            totalTime += worker.timer.getElapsedTime();
-            System.out.println("Worker time: " + worker.timer.getElapsedTime());
         }
-        System.out.println("Total time: " + totalTime);
+
         workerList.clear();
 
         return primesFound;
@@ -75,7 +62,6 @@ public class PrimeFinder
                 thread.join();
             } catch (InterruptedException e)
             {
-                // Because this is what everyone does
                 e.printStackTrace();
             }
         }

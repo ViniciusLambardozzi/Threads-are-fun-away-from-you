@@ -2,7 +2,6 @@ package viniciuslambardozzi.threadsarefunawayfromyou.sandbox;
 
 import viniciuslambardozzi.threadsarefunawayfromyou.core.Interval;
 import viniciuslambardozzi.threadsarefunawayfromyou.core.PrimeFinder;
-import viniciuslambardozzi.threadsarefunawayfromyou.core.WorkerPrimeFinder;
 import viniciuslambardozzi.threadsarefunawayfromyou.core.util.Timer;
 
 import java.math.BigInteger;

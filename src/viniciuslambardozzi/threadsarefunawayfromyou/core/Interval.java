@@ -22,8 +22,7 @@ public class Interval
 
     private void init(BigInteger start, BigInteger size, BigInteger step)
     {
-        interval = new LinkedList<BigInteger>();
-        BigInteger currValue = start;
+        interval = new LinkedList<>();
 
         for(BigInteger i = BigInteger.ZERO; i.compareTo(size) < 0; i = i.add(BigInteger.ONE))
         {
@@ -55,15 +54,5 @@ public class Interval
         initialized = false;
 
         return lists;
-    }
-
-    public LinkedList<BigInteger> getInterval()
-    {
-        return interval;
-    }
-
-    public BigInteger getSize()
-    {
-        return size;
     }
 }
