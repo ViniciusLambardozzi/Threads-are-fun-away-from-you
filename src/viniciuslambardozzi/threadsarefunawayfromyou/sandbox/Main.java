@@ -14,15 +14,17 @@ public class Main
     {
         Timer timer = new Timer();
 
-        Interval interval = new Interval(BigInteger.valueOf(1), BigInteger.valueOf(500000), BigInteger.valueOf(2));
+        Interval interval = new Interval(BigInteger.valueOf(1), BigInteger.valueOf(10000), BigInteger.valueOf(2));
 
         PrimeFinder finder = new PrimeFinder();
 
         timer.start();
-        finder.find(interval, WorkerPrimeFinder.FinderMethod.NORMAL);
+
+        finder.find(interval);
+        LinkedList<BigInteger> primes = finder.getPrimesFound();
+
         timer.stop();
 
-        LinkedList<BigInteger> primes = finder.getPrimesFound();
 
         for(BigInteger prime : primes)
         {

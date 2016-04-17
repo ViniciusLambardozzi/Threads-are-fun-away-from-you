@@ -7,7 +7,7 @@ import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-public class PrimeFinder implements IWorkerManager
+public class PrimeFinder
 {
     private ArrayList<WorkerPrimeFinder> workerList;
     private ArrayList<Thread> threadList;
@@ -29,12 +29,12 @@ public class PrimeFinder implements IWorkerManager
         primesFound = new LinkedList<>();
     }
 
-    public void find(Interval interval, WorkerPrimeFinder.FinderMethod method)
+    public void find(Interval interval)
     {
         LinkedList<BigInteger>[] lists = interval.split(LibSettings.shouldMultiThread ? LibSettings.currThreadNumber : 1);
         for(int i = 0; i < lists.length; i++)
         {
-            WorkerPrimeFinder worker = new WorkerPrimeFinder(this, lists[i], method);
+            WorkerPrimeFinder worker = new WorkerPrimeFinder(lists[i]);
             Thread thread = new Thread(worker);
             workerList.add(worker);
             registerWorker(thread);
@@ -45,6 +45,17 @@ public class PrimeFinder implements IWorkerManager
     public LinkedList<BigInteger> getPrimesFound()
     {
         joinWorkers();
+
+        long totalTime = 0;
+
+        for(WorkerPrimeFinder worker : workerList)
+        {
+            primesFound.addAll(worker.getPrimesFound());
+            totalTime += worker.timer.getElapsedTime();
+            System.out.println("Worker time: " + worker.timer.getElapsedTime());
+        }
+        System.out.println("Total time: " + totalTime);
+        workerList.clear();
 
         return primesFound;
     }
@@ -69,18 +80,5 @@ public class PrimeFinder implements IWorkerManager
             }
         }
         threadList.clear();
-
-        for(WorkerPrimeFinder worker : workerList)
-        {
-            System.out.println("Worker time:" + worker.timer.getElapsedTime());
-        }
-        workerList.clear();
-    }
-
-    @Override
-    public void manageWorkerResult(Worker worker)
-    {
-        WorkerPrimeFinder finder = (WorkerPrimeFinder)worker;
-        primesFound.addAll(finder.getPrimesFound());
     }
 }
