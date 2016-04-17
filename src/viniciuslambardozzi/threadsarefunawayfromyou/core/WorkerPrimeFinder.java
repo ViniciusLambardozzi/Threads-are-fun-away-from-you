@@ -12,18 +12,18 @@ public class WorkerPrimeFinder extends Worker
         ERATHOSTENES,
     }
 
-    private Interval interval;
+    private LinkedList<BigInteger> values;
     private FinderMethod method;
 
     private LinkedList<BigInteger> primesFound;
 
-    public WorkerPrimeFinder(IWorkerManager manager, Interval interval, FinderMethod method)
+    public WorkerPrimeFinder(IWorkerManager manager, LinkedList<BigInteger> values, FinderMethod method)
     {
         super(manager);
 
         primesFound = new LinkedList<BigInteger>();
 
-        this.interval = interval;
+        this.values = values;
         this.method = method;
     }
 
@@ -39,9 +39,9 @@ public class WorkerPrimeFinder extends Worker
         switch (method)
         {
             case NORMAL:
-                while(!interval.getInterval().isEmpty())
+                while(!values.isEmpty())
                 {
-                    BigInteger i = interval.getInterval().pollFirst();
+                    BigInteger i = values.pollFirst();
                     boolean isPrime = true;
                     if(i.compareTo(BigInteger.valueOf(0)) == 0)
                     {

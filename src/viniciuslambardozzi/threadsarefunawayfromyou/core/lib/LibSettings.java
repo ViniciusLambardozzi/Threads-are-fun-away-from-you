@@ -2,6 +2,6 @@ package viniciuslambardozzi.threadsarefunawayfromyou.core.lib;
 
 public class LibSettings
 {
-    public static boolean shouldMultiThread = true;
-    public static int     currThreadNumber  = 1;
+    public static boolean shouldMultiThread = false;
+    public static int     currThreadNumber  = 4;
 }

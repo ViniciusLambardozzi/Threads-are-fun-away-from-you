@@ -1,21 +1,25 @@
 package viniciuslambardozzi.threadsarefunawayfromyou.core;
 
+import viniciuslambardozzi.threadsarefunawayfromyou.core.util.Timer;
+
 public abstract class Worker implements Runnable
 {
-    IWorkerManager manager;
+    public IWorkerManager manager;
+    public Timer timer;
 
     public Worker(IWorkerManager manager)
     {
         this.manager = manager;
+        this.timer = new Timer();
     }
 
     @Override
     public void run()
     {
         onWorkerStart();
-
+        timer.start();
         work();
-
+        timer.stop();
         onWorkerFinish();
     }
 
