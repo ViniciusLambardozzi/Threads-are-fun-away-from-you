@@ -6,9 +6,9 @@ import java.util.LinkedList;
 public class Interval
 {
     private LinkedList<BigInteger> interval;
-    private BigInteger start;
-    private BigInteger size;
-    private BigInteger step;
+    public BigInteger start;
+    public BigInteger size;
+    public BigInteger step;
 
     private boolean initialized;
 

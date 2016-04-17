@@ -26,10 +26,10 @@
         <entry file="file://$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/Interval.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+              <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1236#1248#0" expanded="true" />
+                <element signature="e#1233#1245#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/sandbox/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+              <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,6 +67,30 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrimeFileOutput.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/util/PrimeFileOutput.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2921875">
+              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PerformanceFileOutput.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/util/PerformanceFileOutput.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,11 +122,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WorkerPrimeFinder.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WorkerPrimeFinder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/WorkerPrimeFinder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3359375">
-              <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#468#469#0" expanded="true" />
@@ -146,7 +170,10 @@
         <option value="$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/lib/LibSettings.java" />
         <option value="$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/WorkerPrimeFinder.java" />
         <option value="$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/sandbox/Main.java" />
+        <option value="$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/util/PrimeOutputFile.java" />
         <option value="$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/Interval.java" />
+        <option value="$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/util/PerformanceFileOutput.java" />
+        <option value="$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/util/PrimeFileOutput.java" />
       </list>
     </option>
   </component>
@@ -716,7 +743,7 @@
           <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1236#1248#0" expanded="true" />
+            <element signature="e#1233#1245#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -763,26 +790,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/util/Timer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-          <folding>
-            <element signature="e#170#171#0" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-            <element signature="e#307#308#0" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#390#391#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/lib/LibSettings.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/WorkerPrimeFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/sandbox/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -794,12 +828,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/sandbox/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/util/Timer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#170#171#0" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -819,22 +858,30 @@
     <entry file="file://$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/Interval.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1236#1248#0" expanded="true" />
+            <element signature="e#1233#1245#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/WorkerPrimeFinder.java">
+    <entry file="file://$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/util/PerformanceFileOutput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3359375">
-          <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viniciuslambardozzi/threadsarefunawayfromyou/core/util/PrimeFileOutput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2921875">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

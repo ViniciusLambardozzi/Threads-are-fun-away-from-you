@@ -29,8 +29,5 @@ public class Main
         {
             System.out.println(prime);
         }
-
-        System.out.println("Primes found: " + primes.size());
-        System.out.println("Time: " + timer.getElapsedTime());
     }
 }
