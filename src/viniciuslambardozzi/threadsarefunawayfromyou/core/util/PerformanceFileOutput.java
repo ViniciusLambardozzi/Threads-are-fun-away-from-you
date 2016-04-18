@@ -6,7 +6,7 @@ import java.io.*;
 
 public class PerformanceFileOutput
 {
-    public static void writePerformanceToFile(Interval interval, long primesFound, long timeElapsed, String fileName) throws IOException
+    public static void writePerformanceToFile(Interval interval, int threadNumber, long primesFound, long timeElapsed, String fileName) throws IOException
     {
         File file = new File(System.getProperty("user.dir") + fileName);
 
@@ -23,6 +23,7 @@ public class PerformanceFileOutput
         out.println("Processors: " + Runtime.getRuntime().availableProcessors());
         out.println("Free Memory: " + Runtime.getRuntime().freeMemory());
         out.println("Interval: { start: " + interval.start.toString() + ", size: " + interval.size + ", step: " + interval.step + " }");
+        out.println("Thread number: " + threadNumber);
         out.println("Primes found: " + primesFound);
         out.println("Time elapsed: " + timeElapsed);
         out.println();

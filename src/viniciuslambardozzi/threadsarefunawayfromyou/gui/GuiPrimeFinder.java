@@ -27,6 +27,10 @@ public class GuiPrimeFinder extends JFrame {
 
 	public void logToOutput(String str)
 	{
+		if(!str.equals("\n"))
+		{
+			txtrPrimeFinderOutput.append("[" + System.currentTimeMillis() +"]: ");
+		}
 		txtrPrimeFinderOutput.append(str + "\n");
 		txtrPrimeFinderOutput.setCaretPosition(txtrPrimeFinderOutput.getDocument().getLength());
 	}
@@ -125,6 +129,7 @@ public class GuiPrimeFinder extends JFrame {
 		contentPane.add(chckbxLogPrimesFound);
 		
 		txtrPrimeFinderOutput = new JTextArea();
+		txtrPrimeFinderOutput.setFont(new Font("Monospaced", Font.PLAIN, 10));
 		DefaultCaret caret = (DefaultCaret) txtrPrimeFinderOutput.getCaret();
 		caret.setUpdatePolicy(DefaultCaret.ALWAYS_UPDATE);
 		txtrPrimeFinderOutput.setEditable(false);
@@ -163,9 +168,11 @@ public class GuiPrimeFinder extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				if(!chckbxMultiThread.isSelected())
 				{
+					txtNumberOfThreads.setText("1");
 					txtNumberOfThreads.setEnabled(false);
 				}else
 				{
+					txtNumberOfThreads.setText("4");
 					txtNumberOfThreads.setEnabled(true);
 				}
 			}
@@ -181,17 +188,22 @@ public class GuiPrimeFinder extends JFrame {
 				{
 					Timer timer = new Timer();
 
-					txtrPrimeFinderOutput.setText("Successfully generated interval.\n");
 
 					timer.start();
 					Interval interval = new Interval(new BigInteger(txtStart.getText()), new BigInteger(txtSize.getText()), new BigInteger(txtStep.getText()));
+					logToOutput("Successfully generated interval.\n");
 
 					PrimeFinder finder = new PrimeFinder();
+					int threadNumber = Integer.parseInt(txtNumberOfThreads.getText());
 
-					finder.find(interval);
+					finder.find(interval, threadNumber);
 
 					LinkedList<BigInteger> primes = finder.getPrimesFound();
 					timer.stop();
+
+					logToOutput("Primes found: " + String.valueOf(primes.size()));
+					logToOutput("Total time elapsed: " + timer.getElapsedTime());
+					logToOutput("\n");
 
 					if(chckbxLogPrimesFound.isSelected())
 					{
@@ -208,7 +220,7 @@ public class GuiPrimeFinder extends JFrame {
 					{
 						try
 						{
-							PerformanceFileOutput.writePerformanceToFile(interval, primes.size(), timer.getElapsedTime(), "Performance-log");
+							PerformanceFileOutput.writePerformanceToFile(interval, threadNumber, primes.size(), timer.getElapsedTime(), "Performance-log");
 						} catch (IOException e1)
 						{
 							e1.printStackTrace();
@@ -220,6 +232,7 @@ public class GuiPrimeFinder extends JFrame {
 					txtrPrimeFinderOutput.setText("All the interval settings accept only numbers.");
 					btnStart.setEnabled(true);
 				}
+				btnStart.setEnabled(true);
 			}
 		});
 		btnStop.addActionListener(new ActionListener() {

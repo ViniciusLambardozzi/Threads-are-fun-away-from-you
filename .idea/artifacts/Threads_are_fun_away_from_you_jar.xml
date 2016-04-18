@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Threads-are-fun-away-from-you:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Threads_are_fun_away_from_you_jar</output-path>
+    <root id="archive" name="Threads-are-fun-away-from-you.jar">
+      <element id="module-output" name="Threads-are-fun-away-from-you" />
+    </root>
+  </artifact>
+</component>

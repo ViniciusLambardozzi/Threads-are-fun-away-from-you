@@ -1,6 +1,5 @@
 package viniciuslambardozzi.threadsarefunawayfromyou.core;
 
-import viniciuslambardozzi.threadsarefunawayfromyou.core.lib.LibSettings;
 import viniciuslambardozzi.threadsarefunawayfromyou.gui.GuiPrimeFinder;
 
 import java.math.BigInteger;
@@ -21,9 +20,9 @@ public class PrimeFinder
         primesFound = new LinkedList<>();
     }
 
-    public void find(Interval interval)
+    public void find(Interval interval, int threadNumber)
     {
-        LinkedList<BigInteger>[] lists = interval.split(LibSettings.shouldMultiThread ? LibSettings.currThreadNumber : 1);
+        LinkedList<BigInteger>[] lists = interval.split(threadNumber);
         for(int i = 0; i < lists.length; i++)
         {
             WorkerPrimeFinder worker = new WorkerPrimeFinder(lists[i], i);
