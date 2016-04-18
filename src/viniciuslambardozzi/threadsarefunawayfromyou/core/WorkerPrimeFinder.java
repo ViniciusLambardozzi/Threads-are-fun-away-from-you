@@ -1,19 +1,27 @@
 package viniciuslambardozzi.threadsarefunawayfromyou.core;
 
+import viniciuslambardozzi.threadsarefunawayfromyou.core.util.Timer;
+import viniciuslambardozzi.threadsarefunawayfromyou.gui.GuiPrimeFinder;
+
 import java.math.BigInteger;
 import java.util.LinkedList;
 
 public class WorkerPrimeFinder  implements Runnable
 {
 
+    Timer timer = new Timer();
+
     private LinkedList<BigInteger> values;
 
     private LinkedList<BigInteger> primesFound;
 
-    public WorkerPrimeFinder(LinkedList<BigInteger> values)
+    int id;
+
+    public WorkerPrimeFinder(LinkedList<BigInteger> values, int id)
     {
         primesFound = new LinkedList<>();
 
+        this.id = id;
         this.values = values;
     }
 
@@ -25,6 +33,7 @@ public class WorkerPrimeFinder  implements Runnable
     @Override
     public void run()
     {
+        timer.start();
         while (!values.isEmpty())
         {
             BigInteger i = values.pollFirst();
@@ -51,5 +60,7 @@ public class WorkerPrimeFinder  implements Runnable
                 primesFound.add(i);
             }
         }
+        timer.stop();
+        GuiPrimeFinder.frame.logToOutput("Thread " + id + " finished running after " + timer.getElapsedTime() + " milliseconds.");
     }
 }

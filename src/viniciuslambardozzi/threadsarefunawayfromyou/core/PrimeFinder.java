@@ -1,6 +1,7 @@
 package viniciuslambardozzi.threadsarefunawayfromyou.core;
 
 import viniciuslambardozzi.threadsarefunawayfromyou.core.lib.LibSettings;
+import viniciuslambardozzi.threadsarefunawayfromyou.gui.GuiPrimeFinder;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
@@ -25,8 +26,9 @@ public class PrimeFinder
         LinkedList<BigInteger>[] lists = interval.split(LibSettings.shouldMultiThread ? LibSettings.currThreadNumber : 1);
         for(int i = 0; i < lists.length; i++)
         {
-            WorkerPrimeFinder worker = new WorkerPrimeFinder(lists[i]);
+            WorkerPrimeFinder worker = new WorkerPrimeFinder(lists[i], i);
             Thread thread = new Thread(worker);
+            GuiPrimeFinder.frame.logToOutput("Thread " + i + " created.");
             workerList.add(worker);
             registerWorker(thread);
             thread.start();
@@ -54,7 +56,7 @@ public class PrimeFinder
 
     public void joinWorkers()
     {
-        System.out.println(threadList.size());
+        GuiPrimeFinder.frame.logToOutput("\n Waiting for threads to finish...\n");
         for(Thread thread : threadList)
         {
             try

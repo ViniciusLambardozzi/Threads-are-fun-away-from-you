@@ -15,7 +15,8 @@ public class PerformanceFileOutput
             file.createNewFile();
         }
 
-        FileWriter fw = new FileWriter(System.getProperty("user.dir") + fileName, true);
+        FileWriter fw = new FileWriter(System.getProperty("user.dir") + "\\" + fileName + ".txt" +
+                "", true);
         BufferedWriter bw = new BufferedWriter(fw);
         PrintWriter out = new PrintWriter(bw);
 
@@ -26,5 +27,8 @@ public class PerformanceFileOutput
         out.println("Time elapsed: " + timeElapsed);
         out.println();
         out.println();
+
+        out.close();
+        bw.close();
     }
 }

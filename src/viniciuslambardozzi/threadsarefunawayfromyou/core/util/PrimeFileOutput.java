@@ -11,7 +11,7 @@ public class PrimeFileOutput
 {
     public static void writePrimesToFile(LinkedList<BigInteger> primes, String fileName) throws IOException
     {
-        File file = new File(System.getProperty("user.dir") + fileName);
+        File file = new File(System.getProperty("user.dir") + "\\" + fileName + ".txt");
 
         if(!file.exists())
         {
@@ -25,5 +25,7 @@ public class PrimeFileOutput
             writer.write(prime.toString());
             writer.write(", ");
         }
+
+        writer.close();
     }
 }

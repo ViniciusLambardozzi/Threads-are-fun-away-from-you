@@ -1,0 +1,14 @@
+Processors: 4
+Free Memory: 120720840
+Interval: { start: 1, size: 1000, step: 2 }
+Primes found: 302
+Time elapsed: 143
+
+
+Processors: 4
+Free Memory: 426634600
+Interval: { start: 1, size: 5000, step: 2 }
+Primes found: 1228
+Time elapsed: 647
+
+
