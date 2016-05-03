@@ -8,9 +8,11 @@ import java.util.LinkedList;
 
 public class PrimeFinder
 {
+    /*Mantém um registro de todas as threads para gerenciamento*/
     private ArrayList<WorkerPrimeFinder> workerList;
     private ArrayList<Thread> threadList;
 
+    /* Variável usada como resultado */
     private LinkedList<BigInteger> primesFound;
 
     public PrimeFinder()
@@ -20,6 +22,8 @@ public class PrimeFinder
         primesFound = new LinkedList<>();
     }
 
+    /*Procura números primos em interval, com threadNumber threads
+    * O intervalo é dividido, e uma thread é criada, salva nas listas de gerenciamento e iniciada para cada parte do intervalo */
     public void find(Interval interval, int threadNumber)
     {
         LinkedList<BigInteger>[] lists = interval.split(threadNumber);
@@ -34,6 +38,7 @@ public class PrimeFinder
         }
     }
 
+    /*Aguarda o término da execução das threads e retorna a lista de primos encontrados */
     public LinkedList<BigInteger> getPrimesFound()
     {
         joinWorkers();
@@ -48,11 +53,13 @@ public class PrimeFinder
         return primesFound;
     }
 
+    /*Salva uma thread na lista de gerenciamento*/
     public void registerWorker(Thread thread)
     {
         threadList.add(thread);
     }
 
+    /*Aguarda o término de uma thread */
     public void joinWorkers()
     {
         GuiPrimeFinder.frame.logToOutput("\n Waiting for threads to finish...\n");

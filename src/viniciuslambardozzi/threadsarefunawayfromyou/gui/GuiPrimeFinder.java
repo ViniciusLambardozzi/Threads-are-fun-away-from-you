@@ -148,7 +148,7 @@ public class GuiPrimeFinder extends JFrame {
 		btnStart.setBounds(245, 487, 89, 23);
 		contentPane.add(btnStart);
 		
-		JButton btnStop = new JButton("Stop!");
+		JButton btnStop = new JButton("Close!");
 		btnStop.setBounds(146, 487, 89, 23);
 		contentPane.add(btnStop);
 		

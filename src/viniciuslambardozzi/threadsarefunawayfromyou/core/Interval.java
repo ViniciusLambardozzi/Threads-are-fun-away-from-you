@@ -11,7 +11,11 @@ public class Interval
     public BigInteger step;
 
     private boolean initialized;
-
+/*
+* Cria um intervalo que inicia em start, contém size números e avança de step em step
+* Exemplo: start = 1, size = 5, step = 2
+*          1, 2, 3, 5, 7
+**/
     public Interval(BigInteger start, BigInteger size, BigInteger step)
     {
         this.start = start;
@@ -20,6 +24,8 @@ public class Interval
         init(start, size, step);
     }
 
+    /*
+    * Salva os valores do intervalo criado em uma lista */
     private void init(BigInteger start, BigInteger size, BigInteger step)
     {
         interval = new LinkedList<>();
@@ -31,6 +37,8 @@ public class Interval
         initialized = true;
     }
 
+    /*Divide o intervalo criado em number listas de tamanhos iguais, exceto pela útima, que recebe os valores extras do resto da divisão.
+    * Usada para dividir o intervalo entre threads*/
     public LinkedList<BigInteger>[] split(int number)
     {
         if(!initialized)
